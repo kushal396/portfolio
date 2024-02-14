@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="StyleSheets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="StyleSheets/media.css">
+
+    
+</head>
+<body>
+    <div id="backgcolor" class="outter-container">
+        <div id="text-color" class="inner-container">
+            <div class="navbar">
+                <div class="logo ">
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="links">
+                    <ul id="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contectme.html">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="links flex">
+                    <i id="navbaricon" onclick="navbarslider()" class="fa-solid fa-bars"></i>
+                    <i id="navbaricon1" onclick="navbarslider1()" class="fa-solid fa-bars"></i>
+                    <i id="lightmode" onclick="lightmode()" class="fa-solid fa-lightbulb"></i>
+                    <i id="darkmode" onclick="darkmode()" class="fa-solid fa-lightbulb"></i>
+                </div>
+            </div>
+
+            <!-- body -->
+            <div class="body-container">
+                <div class="social-media-icons">
+                     <ul><a href="https://github.com/kushal396" target="_blank"><i class="fa-brands fa-github"></i></a></ul>
+                     <ul><a href="https://www.linkedin.com/in/kushal-kumar-cs/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></ul>
+                </div>
+                <div class="main-text">
+                    <h1>Hi, I am <span style="color: red;">K</span>ushal</h1>
+                    <h3>Frontend Weveloper</h3>
+                    <p>An enthusiastic and a passionate coder with an eye for detail and a focus to produce quality work.</p>
+                    <button>My Resume <span><i class="fa">&#xf105;</i></span></button>
+                    <div class="other-portfolio">
+                        <a id="other-portfolio-a-tag" href="Projects/OtherPortfolio/index.html" target="_blank"><span><i class="fa-solid fa-computer-mouse"></i></span> Other Portfolio <span><i class="fa">&#xf105;</i></span></a>
+                    </div>
+                </div>
+                <div id="imgshadow" class="img-side">
+                    <img src="imgs/main img.png" alt="">
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

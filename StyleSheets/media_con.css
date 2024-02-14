@@ -1,0 +1,19 @@
+@media screen and (max-width: 400px) {
+    .input-container {
+        width: 250px;
+    }
+    .bodydiv {
+        padding: 50px 15px;
+    }
+    .bodydiv h1{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width: 280px) {
+    .input-container {
+        width: 150px;
+    }
+    .bodydiv h1{
+        font-size: 2rem;
+    }
+}

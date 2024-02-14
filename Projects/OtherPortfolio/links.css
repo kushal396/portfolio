@@ -1,0 +1,161 @@
+.links{
+    height: 300px;
+    margin-top: 80px;
+    /* padding-left: 65px ; */
+    padding-right: 20px ;
+    color: #fff;
+    text-align: center;
+    /* border: 2px solid; */
+
+}
+
+/* github a tag style  */
+
+#sitename{
+    top: 10px;
+    font-size: 30px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #a0a0a0;
+    position: relative;
+    padding: 0 12px;
+    /* border: 2px solid; */
+}
+
+
+
+
+
+#sitename:hover{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 32px;
+
+}
+
+#sitename i{
+    margin-left: 15px;
+}
+
+#sitename:after{
+    content: "";
+    position: absolute;
+    background-color: #aaaaaa;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+
+}
+
+#sitename:hover:after{
+    width: 100%;
+    /* background-color: #fff; */
+    background-color: aqua;
+
+
+}
+
+
+/* github a tag style only */
+
+
+/* for linkedin */
+
+#linkedin{
+    font-size: 30px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #a0a0a0;
+    position: relative;
+    padding: 0 12px;
+    top:70px
+}
+
+
+
+
+
+#linkedin:hover{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 32px;
+
+}
+
+#linkedin i{
+    margin-left: 15px;
+}
+
+#linkedin:after{
+    content: "";
+    position: absolute;
+    background-color: #aaaaaa;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 1s ;
+    transform: scaleX(0)
+
+}
+
+#linkedin:hover:after{
+    /* width: 100%; */
+    /* background-color: #fff; */
+    background-color: aqua;
+
+    transform: scaleX(1)
+
+}
+
+
+
+/* for leetcode Left to right animation */
+
+#leetcode{
+    font-size: 30px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #a0a0a0;
+    position: relative;
+    padding: 0 12px;
+    top:130px
+}
+
+
+
+
+
+#leetcode:hover{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 32px;
+
+}
+
+#leetcode iconify-icon{
+    margin-left: 15px;
+}
+
+#leetcode:after{
+    content: "";
+    position: absolute;
+    background-color: #aaaaaa;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 1s ease;
+    /* transform: scaleX(0) */
+
+}
+
+#leetcode:hover:after{
+    /* width: 100%; */
+    background-color: aqua;
+    /* background-color: #fff; */
+    /* transform: scaleX(1) */
+    width: 100%;
+}

@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom, #0b2b3c 35%, #0186BF 70%);
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* overflow: hidden; */
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.728);
+}
+
+.card{
+    /* border: 1px solid black; */
+    margin: 60px;
+    height: 85%;
+    border-radius: 30px;
+    background-color: #0e2331;
+    box-shadow: 6px 6px 4px 0.5px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+}
+
+.nav{
+    display: flex;
+}
+
+#nav1{
+    width: 50%;
+}
+#nav2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 230px;
+    padding-right: 40px;
+    /* border: 2px solid black; */
+    width: 50%;
+}
+
+#nav2 a{
+    /* color: white; */
+    color: rgba(255, 255, 255, 0.728);
+    text-decoration: none;
+    transition: 0.5s;
+    text-decoration: underline;
+    font-size: 18px;
+    letter-spacing: 1px;
+    
+}
+
+#nav2 a:hover{
+
+    /* border: 2px solid black; */
+    padding: 15px;
+    color: aqua;
+    letter-spacing: 3px;
+    /* box-shadow: 0 0 25px aqua; */
+    border-radius: 30px;
+    /* text-decoration: underline; */
+
+
+}
+
+#name{
+    margin: 20px;
+    margin-left: 60px;
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: aqua;
+}
+
+#h2{
+    margin-left: 65px;
+}
+
+.intro{
+    margin-top: 10px;
+    display: flex;
+    /* border: 2px solid white; */
+
+}
+
+#intro1{
+    padding-top: 70px;
+    /* border: 2px solid black; */
+    width: 50%;
+    padding-left: 70px;
+    
+}
+
+#intro1 p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+
+#button{
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 12px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.728);
+    font-size: 20px;
+    cursor: pointer;
+    border-color: rgba(0, 195, 255, 0.701);
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+#button a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.728);
+    
+}
+#button:hover{
+    
+    letter-spacing: 3px;
+    padding: 14px;
+    box-shadow: 0 0 35px aqua;
+    color: aqua;
+}
+#button a:hover{
+    
+    letter-spacing: 3px;
+    /* padding: 14px; */
+    /* box-shadow: 0 0 35px aqua; */
+    color: aqua;
+}
+
+#photo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    padding-top: 80px;
+    
+}
+
+#photo img{
+    width: 50%;
+    border-radius: 5000px;
+    box-shadow: 0 0 200px aqua;
+    transition: 0.5s;
+}
+
+#photo img:hover{
+    width: 55%;
+}
+
+
+
+
+
+

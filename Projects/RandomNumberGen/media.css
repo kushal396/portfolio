@@ -1,0 +1,29 @@
+@media only screen and (max-width: 650px) {
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .input{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .generatednumber{
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .heading-text h1{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 300px) {
+.heading-text{
+    padding: 40px 0;
+}
+.heading-text h1::before{
+    content: none;
+}
+}

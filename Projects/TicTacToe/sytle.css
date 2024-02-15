@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container h1{
+    padding: 60px 0;
+    filter: drop-shadow(0 0 10px rgb(255, 0, 255));
+    /* text-shadow: 2px 2px ; */
+    /* filter: drop-shadow(-2px -2px 5px purple); */
+    position: relative;
+}
+/* .main-container h1::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 70px;
+} */
+
+
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: purple;
+}
+.inner-container{
+    height: 55%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 68px;
+    /* border: 2px solid white; */
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 240px;
+    border-radius: 10px;
+    box-shadow: 0px 0px  30px purple;
+}
+.box{
+    min-height: 80px;
+    width: 80px;
+    border-radius: 0;
+    border: 2px solid purple;
+    cursor: pointer;
+    background-color: transparent;
+    color: purple;
+    font-size: 1.3rem;
+}
+
+.box1{
+    border-bottom:none;
+    border-right:none;
+    border-top-left-radius:10px;
+}
+
+.box3{
+    border-bottom:none;
+    border-left:none;
+    border-top-right-radius:10px;
+}
+.box7{
+    border-top:none;
+    border-right:none;
+    border-bottom-left-radius:10px;
+}
+.box9{
+    border-top:none;
+    border-left:none;
+    border-bottom-right-radius:10px;
+}
+.box2{
+    border-bottom: none;
+}
+.box4{
+    border-right:none;
+}
+.box6{
+    border-left:none;
+}
+.box8{
+    border-top:none;
+
+}
+
+.box:hover{
+    background-color: rgba(128, 0, 128, 0.308);
+}
+
+.reset-btn{
+    padding: 10px 30px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    color: purple;
+    cursor: pointer;
+    font-size: 1rem;
+    /* font-weight: bol; */
+}
+
+.reset-btn:hover{
+    /* background-color: rgba(128, 0, 128, 0.308); */
+    box-shadow: 0px 0px 20px purple;
+}
+

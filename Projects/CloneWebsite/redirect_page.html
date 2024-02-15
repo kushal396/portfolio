@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect...</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            /* background-color: rgb(204, 204, 204); */
+        }
+        .card{
+            width: 55%;
+            height: 250px;
+            border: 1px solid black;
+            position: relative;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /* background-image: radial-gradient(rgb(133, 133, 133),rgb(0, 0, 0)); */
+            box-shadow: 3px 3px 5px gray;
+            border-radius: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            /* color: rgb(255, 255, 255); */
+        }
+        h1{
+            margin-top: 30px;
+            font-size: 1.3rem;
+        }
+        h2{
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        .img-flex{
+            position: relative;
+            top: -20px;
+            display: flex;
+            /* border: 2px solid; */
+            width: 100%;
+            justify-content: center;
+        }
+        .img{
+            width: 50%;
+
+        }
+        .img img{
+            width: 100%;
+
+        }
+    </style>
+
+    <script>
+        var seconds=10;
+        function displayseconds()
+        {
+            seconds = seconds-1;
+            document.getElementById("Redirect-text").innerText="This Page will be redirect in "+ seconds+" Seconds";
+        }
+        setInterval(displayseconds,1000);
+
+        function redirectpage(){
+            window.location="index.html";
+        }
+        setTimeout('redirectpage()',10000);
+    </script>
+
+</head>
+<body>
+    <div class="card">
+        <h1>Cloned Site is not responsive</h1>
+        <h2>So, Open it in Computer</h2>
+
+        <div id="Redirect-text">
+
+        </div>    
+        <div class="img-flex">
+        <div class="img">
+            
+        <img src="assets/Quarter Circle Loading Image Gif.gif" alt="">
+    </div>
+        </div>
+    </div>
+    
+</body>
+</html>

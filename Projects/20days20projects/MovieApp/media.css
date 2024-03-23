@@ -1,0 +1,52 @@
+@media screen and (max-width: 750px) {
+    .movie-card-container{
+        padding-inline: 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .header{
+        padding: 20px;
+    }
+    .movie-detail{
+        width: 80vw;
+        /* border: 2px solid; */
+        padding-top: 20px;
+    }
+.slidebtn{
+    top: 75%;
+}
+#right{
+    right: 150px;
+
+}
+#left{
+    left: 150px;
+    /* transform: rotate(180deg); */
+}
+
+}
+@media screen and (max-width: 430px) {
+    .header{
+        flex-direction: column;
+        /* border: 2px solid; */
+        padding: 0px;
+    }
+    #form{
+        margin-top: 20px;
+        width: 60%;
+    }
+    .movie-detail{
+        width: 95vw;
+    }
+    #right{
+        right: 100px;
+    
+    }
+    #left{
+        left: 100px;
+    }
+    .mesg.space{
+        margin-top: 100px;
+    }
+    
+}

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(254, 250, 246);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-container{
+    /* border: 2px solid black; */
+    margin-top: 150px;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text-container h1{
+    color: rgb(255, 98, 0);
+    padding-inline: 15px;
+}
+#backC{
+    background-color: rgb(255, 98, 0);
+    color: white;
+    padding-inline: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 6px black;
+}
+
+.progress-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    position: relative;
+    font-size: 1.5rem;
+    /* transition: 0.5s ease; */
+}
+
+
+.circles{
+    background-color: rgb(254, 250, 246);
+    padding: 3px 11px;
+    border: 4px solid rgb(135, 135, 135);
+    border-radius: 50%;
+    /* cursor: pointer; */
+    transition: .2s;
+}
+.progress-container::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(135, 135, 135);
+    z-index: -1;
+}
+
+.back-line{
+    position: absolute;
+    height: 4px;
+    width: 0;
+    top: 50%;
+    background-color: rgb(255, 98, 0);
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.5s ease;
+}
+/* .back-line::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: var(--width);
+    background-color: rgb(255, 98, 0);
+} */
+
+.circles.active{
+    border: 4px solid rgb(255, 98, 0);
+}
+
+
+.btns {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.btns button{
+    padding: 5px 25px;
+    background-color: rgb(255, 98, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.btns button:disabled{
+    background-color:rgba(255, 98, 0, 0.651) ;
+    cursor: not-allowed;
+}
+
+.btns button:active{
+    transform: scale(0.9);
+}
+
+
+@media (max-width:450px) {
+    .text-container{
+        margin-top: 100px;
+    }
+    .container{
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

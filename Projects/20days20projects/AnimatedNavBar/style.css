@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(49, 51, 54);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cornar {
+    position: absolute;
+    transform: translate(-90%, -90%);
+
+}
+
+.navicon {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(63, 149, 255);
+    border-radius: 50%;
+    transition: transform .7s linear;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.navicon button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    cursor: pointer;
+    color: white;
+
+}
+
+#open {
+    bottom: 0;
+    right: 0;
+    transform: translate(-225%, -150%);
+}
+
+#close {
+    bottom: 0;
+    left: 0;
+    transform: translate(200%, -230%);
+}
+
+.navicon.shownav {
+    transform: rotate(-90deg);
+}
+
+
+.contianer.shownav1 {
+    transform: rotate(-20deg);
+}
+
+.contianer {
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 80px;
+    /* border: 2px solid; */
+    line-height: 1.2;
+    transform-origin: top left;
+    transition: transform 0.7s linear;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.navlinks {
+    display: inline-block;
+    transform: translate(-200%);
+    position: absolute;
+    bottom: 40px;
+    z-index: 1;
+    transition: transform 0.7s linear;
+
+}
+
+.navlinks li,a {
+    margin: 20px 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(63, 149, 255);
+    text-decoration: none;
+    list-style: none;
+    transition: transform 0.7s linear;
+    text-shadow: 2px 1px rgba(63, 149, 255, 0.419);
+    /* text-shadow: 10px; */
+    /* filter: drop-shadow(0 0 8px rgb(63, 149, 255)); */
+}
+
+
+.navlinks ul li + li{
+    position: relative;
+    right: -15px;
+}
+.navlinks ul li + li+li{
+    right: -30px;
+}
+
+
+/* .navlinks.show ul li {
+    transform: translateX(220%);
+}
+.navlinks.show ul li+li {
+    transform: translateX(220%);
+}
+.navlinks.show ul li + li +li{
+    transform: translateX(220%);
+} */
+.navlinks.show {
+    transform: translate(70%);
+}
